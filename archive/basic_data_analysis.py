@@ -1,11 +1,11 @@
 import pandas as pd
 
 # 파일 불러오기
-file_path = 'datasets/ks200.csv'  # 파일 경로를 필요에 따라 변경해주세요.
+file_path = '../merged_data.csv'  # 파일 경로를 필요에 따라 변경해주세요.
 combined_data_df = pd.read_csv(file_path)
 
 # 'Date' 열을 날짜 형식으로 변환
-combined_data_df['Date'] = pd.to_datetime(combined_data_df['Date'])
+combined_data_df['날짜'] = pd.to_datetime(combined_data_df['날짜'])
 
 # 데이터프레임의 기본 정보 출력
 print("=== 데이터프레임의 기본 정보 ===")
